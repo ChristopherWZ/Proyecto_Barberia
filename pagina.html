@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--Link de boostrap y CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Barberia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#seccion-Clientes">Cliente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-Citas">Citas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-Barberos">Barberos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-Inventario">Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-Servicios">Servicios</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--===================================Seccion de inicio==============================-->
+
+    <section class="imagen-inicio ">
+        <div class="container-fluid justify-content-center text-center">
+            <img class="w-100 img-fluid" src="/imagenes/barberiaincio2.jpg" alt="imagen-barberia-inicio">
+        </div>
+
+    </section>
+
+
+
+    <!--===========================================Seccion de clientes============================-->
+
+    <section class="seccion-Clientes" id="seccion-Clientes">
+        <div class="container clientes">
+            <h1 class="text-center ">Clientes</h1>
+            <form action=""></form>
+
+            <div class="formulario-clientes ">
+
+
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputFLname" class="form-label">Primer Apellido</label>
+                        <input type="text" class="form-control" id="inputFLname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputLLname" class="form-label">Segundo Apellido</label>
+                        <input type="text" class="form-control" id="inputLLname">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Direccion </label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Province, Specifics">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputBirth" class="form-label">Nacimiento</label>
+                        <input type="date" class="form-control" id="inputBirth">
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="inputdate" class="form-label">Fecha Ingreso</label>
+                        <input type="date" class="form-control" id="inputdate">
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-warning">Subir Cliente</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!--=================================== Seccion de Citas ======================================-->
+
+    <section class="seccion-Citas" id="seccion-Citas">
+        <div class="container-fluid Citas">
+            <div class="citasformulario text-center text-white">
+                <h1>Citas</h1>
+
+                <!--Primera fila donde se mostara el codigo-->
+                <form class="row ">
+                    <div class="col-sm">
+                        <label for="inputCita" class="form-label">Codigo Cita</label>
+                        <input type="text" class="form-control" id="inputCita" placeholder="Codigo de la Cita">
+                    </div>
+
+                    <!--Segunda Fila-->
+                    <div class="row">
+                        <!--Columna Izquierda de citas-->
+                        <div class="col-md-6 col-sm-12">
+
+                            <div class="Campo-Codigo-Cliente">
+                                <label for="inputCodCli" class="form-label">Codigo Cliente</label>
+                                <input type="text" class="form-control" id="inputCodCli"
+                                    placeholder="Codigo del Cliente">
+                            </div>
+
+                            <div class="Campo-Codigo-Barbero">
+                                <label for="inputCodBarb" class="form-label">Codigo Barbero</label>
+                                <input type="text" class="form-control" id="inputCodBarb"
+                                    placeholder="Codigo del Barbero">
+                            </div>
+
+                            <div class="Campo-Codigo-Servicio">
+                                <label for="inputCodServ" class="form-label">Codigo Servicio</label>
+                                <input type="text" class="form-control" id="inputCodServ"
+                                    placeholder="Codigo del Servicio Ofrecido">
+                            </div>
+
+                            <div class="Campo-Fecha-Cita">
+                                <label for="inputCitadate" class="form-label">Fecha Cita</label>
+                                <input type="date" class="form-control" id="inputCitadate">
+                            </div>
+
+                            <div class="Campo-Hora-Inicio">
+                                <label for="inputHoraInicio" class="form-label">Hora de Inicio</label>
+                                <input type="time" class="form-control" id="inputHoraInicio">
+                            </div>
+
+                            <div class="Campo-Hora-Fin">
+                                <label for="inputHoraFin" class="form-label">Hora de Finalizacion</label>
+                                <input type="time" class="form-control" id="inputHoraFin">
+                            </div>
+
+                        </div>
+
+                        <!--Columna derecha de citas-->
+                        <div class="col-md-6 col-sm-12">
+
+                            <div class="Estado-Cita">
+                                <label for="inputEstadoCita" class="form-label">Estado Cita</label>
+                                <input type="text" class="form-control" id="inputEstadoCita"
+                                    placeholder="Estado de la cita">
+                            </div>
+
+                            <div class="Notas-Cita">
+                                <label for="inputNotasCita" class="form-label">Notas Cita</label>
+                                <input type="text" class="form-control" id="inputNotasCita"
+                                    placeholder="Notas adicionales de la cita">
+                            </div>
+                            <br>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 boton-cita">
+                            <button type="submit" class="btn btn-warning">Subir Cliente</button>
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--=======================================Seccion de Barberos=======================================-->
+
+    <section class="seccion-Barberos" id="seccion-Barberos">
+        <div class="container Barberos flex">
+            <h1>Barberos</h1>
+            <div class="row">
+
+                <div class="col">
+                    <input type="text" placeholder="Buscar por nombre">
+
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Buscar </button>
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Reset </button>
+                </div>
+
+
+
+            </div>
+
+
+            </div>
+
+            <div class="tabla-barberos-scroll">
+
+            <table class="container-fluid barbero-tabla">
+                <tr class="tabla-title">
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Primer Apellido</th>
+                    <th>Segundo Apellido</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Fecha de Contratacion</th>
+                    <th>Estado</th>
+                    <th>Especialidad</th>
+                </tr>
+                        <!--Lo siguiente es solo un pequeño ejemplo para demostrar como se ve en la tabla-->
+                <tr>
+                    <td>1</td>
+                    <td>Mario</td>
+                    <td>Perez</td>
+                    <td>Silva</td>
+                    <td>80858085</td>
+                    <td>SilvaP@gmail.com</td>
+                    <td>08/03/1998</td>
+                    <td>10/05/2022</td>
+                    <td>A</td>
+                    <td>Estilista</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" placeholder="IDBarbero" id="inputBarbID">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Nombre" id="inputBarbNom">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Primer Apellido" id="inputBarbPApe">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Segundo Apellido" id="inputBarbSApe">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Telefono" id="inputBarbTel">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Correo" id="inputBarbCorr">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Fecha de nacimiento" id="inputBarbbNac">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Fecha de contratacion" id="inputBarbContra">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Estado" id="inputBarbEst">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Especialidad" id="inputBarbEsp">
+                    </td>
+                </tr>
+
+
+            </table>
+
+
+            </div>
+
+            <br>
+            
+
+                <div class="container row botones-scrum ">
+
+                <div class="col btn-añadir">
+                    <button class="Inventarioupload btn btn-success">Añadir</button>
+                </div>
+
+                 <div class="col btn-modificar">
+                    <button class="Inventarioupload btn btn-info">Modificar</button>
+                </div>    
+                
+                <div class="col btn-eliminar ">
+                    <button class="Inventarioupload btn btn-danger">Eliminar</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!--===================================Seccion de Inventario===============================-->
+
+
+    <section class="seccion-Inventario" id="seccion-Inventario">
+        <div class="container Inventario flex">
+
+            <h1>Inventario</h1>
+
+            <div class="row invetario-funciones">
+
+                <div class="col">
+                    <input type="text" placeholder="Buscar por codigo del producto">
+
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-warning" id="buscarproducto">Buscar </button>
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-warning">Reset </button>
+                </div>
+
+
+
+            </div>
+
+
+            </div>
+
+            <div class="tabla-Inventario-scroll">
+
+            <table class="container inventario-tabla">
+                <tr class="tabla-title-inventario">
+                    
+                    <th></th>
+                    <!--hay un th para darle un espacio al checkbox-->
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Costo</th>
+                    <th>Stock</th>
+                    <th>Entrada</th>
+                    <th>Salida</th>
+                    
+                </tr>
+                        <!--Lo siguiente es solo un pequeño ejemplo para demostrar como se ve en la tabla-->
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        </div>
+                    </td>
+                    <td>1</td>
+                    <td>Champu</td>
+                    <td>Dove</td>
+                    <td>Pelo</td>
+                    <td>1200</td>
+                    <td>1000</td>
+                    <td>4</td>
+                    <td>04/09/2025</td>
+                    <td>05/10/2025</td>
+                    
+                </tr>
+
+                <tr>
+                    <!--el plan del checkbox permitira -->
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        </div>
+                    </td>
+                    <td>2</td>
+                    <td>Razuradora</td>
+                    <td>Phillips</td>
+                    <td>Barba</td>
+                    <td>20000</td>
+                    <td>15000</td>
+                    <td>2</td>
+                    <td>02/09/2025</td>
+                    <td>03/10/2025</td>
+                    
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="text" placeholder="IDProducto" id="inputProductoID">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Nombre" id="inputProdNom">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Marca" id="inputProdMarc">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Descripcion" id="inputProdDesc">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Precio" id="inputProdPrec">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Costo" id="inputProdCos">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Stock" id="inputProdStock">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Entrada" id="inputProdEnt">
+                    </td>
+                                  <td>
+                        <input type="text" placeholder="Salida" id="inputProdSal">
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+
+            </div>
+
+            <div class="container row botones-scrum">
+
+                <div class="col btn-añadir">
+                    <button class="Inventarioupload btn btn-success">Añadir</button>
+                </div>
+
+                 <div class="col btn-modificar">
+                    <button class="Inventarioupload btn btn-info">Modificar</button>
+                </div>    
+                
+                <div class="col btn-eliminar ">
+                    <button class="Inventarioupload btn btn-danger">Eliminar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <br><br><br>
+
+
+
+    <!--==========================================Seccion de Servicios====================================-->
+
+
+    <section class="seccion-Servicios" id="seccion-Servicios">
+        <div class="container-fluid servicios">
+            <h1>Servicios</h1>
+
+            <div class="servicios-contenido">
+                    <div class="row">
+                        <!--Columna Izquierda de citas-->
+                        <div class="col-md-6 col-sm-12">
+
+                            <div class="Campo-Codigo-Servicio">
+                                <label for="inputCodCli" class="form-label">Codigo Servicio </label>
+                                <input type="text" class="form-control" id="inputCodServ"
+                                    placeholder="Codigo del Cliente">
+                            </div>
+
+                            <div class="Campo-Nombre-Servicio">
+                                <label for="inputCodBarb" class="form-label">Nombre Servicio</label>
+                                <input type="text" class="form-control" id="inputNomServ"
+                                    placeholder="Codigo del Barbero">
+                            </div>
+
+                            <div class="Campo-Precio-Servicio">
+                                <label for="inputCodServ" class="form-label">Precio</label>
+                                <input type="text" class="form-control" id="inputPrecServ"
+                                    placeholder="Codigo del Servicio Ofrecido">
+                            </div>
+
+                            <div class="Campo-Duracion-Servicio">
+                                <label for="inputCitadate" class="form-label">Duracion</label>
+                                <input type="time" class="form-control" id="inputDuracServ">
+                            </div>
+
+
+                        </div>
+
+                        <!--Columna derecha de servicios-->
+                        <div class="col-md-6 col-sm-12">
+
+
+                            <div class="Desc-Serv">
+                                <label for="inputDescServ" class="form-label">Descripcion </label>
+                                <input type="text" class="form-control" id="inputDescServ"
+                                    placeholder="Descripcion del servicio">
+                            </div>
+                            <br>
+
+
+                        </div>
+                    </div>
+
+                        <div class="row">
+                        <div class="col-12 boton-cita">
+                            <button type="submit" class="btn btn-primary">Añadir Servicio</button>
+                        </div>
+
+                    </div>
+
+
+            </div>
+            
+
+        </div>
+
+
+    </section>
+
+
+    <!--Seccion de Seccion de pie de pagina -->
+
+
+</body>
+
+</html>

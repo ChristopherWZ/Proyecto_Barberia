@@ -1,0 +1,186 @@
+body {
+    background-color: #202020;
+}
+
+nav {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 50px;
+}
+
+
+
+/* ------------------seccion de inicio --------------------- */
+.imagen-inicio {
+    padding: 20px;
+}
+
+
+
+/* ------------------seccion de Clientes--------------------- */
+.clientes {
+    padding: 20px;
+    color: white;
+}
+
+
+/* ------------------seccion de Citas--------------------- */
+
+.seccion-Citas {
+    
+    background-image: url('./imagenes/CitasFondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    /* Ajusta el espacio superior e inferior */
+    color: white;
+    position: relative;
+}
+
+.citasformulario {
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.citasformulario .Notas-Cita input{
+    height: 315px;
+}
+
+
+
+
+
+/* ------------------seccion de Barberos--------------------- */
+.seccion-Barberos{
+    background-color: rgb(165, 206, 210);
+    color: white;
+    padding: 20px;
+}
+
+.seccion-Barberos h1{
+    text-align: center;
+    padding: 30px;
+}
+
+
+.barbero-tabla{
+    border-radius: 25px;
+    border-style: solid;
+    margin: 20px;
+    width: 100%;
+    
+    
+}
+
+.tabla-title{
+background-color: #2667d0;
+}
+
+.barbero-tabla tr:nth-child(even) {
+  background-color: #dddddd;
+  color: black;
+}
+
+.barberoupload{
+    align-items: end;
+}
+
+.tabla-barberos-scroll {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.tabla-barberos-scroll table {
+    min-width: 1000px; /* Ajusta esto según el contenido mínimo de tu tabla */
+    border-collapse: collapse;
+}
+
+
+/* ------------------seccion de Inventarios--------------------- */
+
+.Inventario h1{
+    text-align: center;
+    color: white;
+    padding: 35px;
+}
+
+
+.invetario-funciones {
+    padding-bottom:15px ;
+}
+
+.tabla-Inventario-scroll{
+    padding: 0px;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 25px;
+    border-color: white;
+    overflow-x: auto;
+    width: 100%;
+
+}
+
+.inventario-tabla {
+     margin: 20px;
+    width: 100%; 
+
+}
+
+
+.inventario-tabla td{
+    color: white;
+    padding: 5px;
+}
+
+.tabla-title-inventario{
+    background-color: #ebb625;
+}
+
+.botones-scrum {
+    padding-top: 15px;
+   justify-content: end;
+}
+
+
+/* ------------------------------Seccion de serivios--------------*/
+
+.seccion-Servicios {
+    padding: 20px;
+    background-image: url('./imagenes/Serviciosfondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    /* Ajusta el espacio superior e inferior */
+    color: white;
+    position: relative;
+}
+
+.servicios h1{
+    text-align: center;
+    
+}
+
+.servicios-contenido{
+    color: #3b3b3b;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.servicios-contenido .Desc-Serv input{
+    height: 315px;
+}
