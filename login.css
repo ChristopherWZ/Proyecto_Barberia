@@ -1,34 +1,63 @@
 
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* altura de la ventana */
-    margin: 0;
-    background-color: #f8f9fa; /* opcional: un fondo suave */
-}
-
-.seccion-login {
-    color: #3b3b3b;
-    background-color: white;
-    padding: 20px;
-    border-style: solid;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 100%;
-}
 
 
-.login {
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
+    body {
+    background-image: url('./imagenes/BarberiaTextura2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Ajusta el espacio superior e inferior */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* altura de la ventana */
+        margin: 0;
+        background-color: #393939; /* opcional: un fondo suave */
+    }
+
+    .mensaje-bienvenida {
+        padding-top: 150px;
+    }
+
+    .mensaje-bienvenida h1{
+        color: white;
+        font-size: 70px;
+    }
+
+      .mensaje-bienvenida h3{
+        color: white;
+        font-size: 20px;
+    }
+
+    .caja-login {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 50px;
+        border-radius: 10px;
+
+    }
+
+    .sign-in{
+        text-align: center;
+        padding: 20px;
+        
+    }
+
+      .sign-in h2{
+        font-size: 50px;
+      }
 
 
-}
+    .login {
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
 
-.login-Functions{
-    padding-top: 20px;
-}
+
+    }
+
+    .login-Functions{
+        padding-top: 20px;
+    }
 
